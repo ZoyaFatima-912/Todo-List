@@ -1,0 +1,163 @@
+body {
+    background: linear-gradient(to bottom, #e1d5f5 30%, #caaff8 70%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 35.5%;
+    height: 3%;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.duedate {
+    padding: 9px;
+}
+
+#add-btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #be9cf5;
+    width: 17.5%;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+#add-btn:hover {
+    background-color: #b186f6;
+}
+
+.delete-edit-button {
+    border: none;
+    color: rgb(73, 73, 73);
+    background: transparent;
+    height: fit-content;
+    width: fit-content;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.delete-edit-button:hover {
+    color: #b186f6;
+}
+
+.list-items{
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+    column-gap: 7px;
+    row-gap: 10px;
+    align-items: center;
+    color: rgb(73, 73, 73);
+}
+
+.parent-div {
+    margin-bottom: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1{
+    background-color: #be9cf5;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container{
+    background-color: #eee5fe;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px lightgrey;
+    min-height: 70%;
+    padding-bottom: 10px;
+}
+
+.bullet-icon{
+    color: rgb(73, 73, 73);
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.input-js{
+    width: 40%;
+}
+
+.task-js{
+    padding-left: 15px;
+}
+
+.list-parent{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1232px) {
+
+    .parent-div{
+        display: block;
+    }
+
+    input{
+        width: 96.5%;
+        display: block;;
+    }
+
+    #add-btn{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 614px){
+
+    .parent-div{
+        display: block;
+    }
+
+    input{
+        width: 90%;
+        display: block;;
+    }
+
+    #add-btn{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
